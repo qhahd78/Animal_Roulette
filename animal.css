@@ -1,9 +1,56 @@
-#main-div{
-    height: 200px;
-    width: 200px;
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* font-family: 'Do Hyeon', sans-serif; */
+
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
 }
 
-#img-size{
-    height: 200px;
-    width: 200px;
+#header-div{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
+#main-div p {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+#btn {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
+#btn:hover{
+    /* transition: .5s; */
+    cursor: pointer;
+    /* background-color: rgb(115, 115, 238); */
+}
+
+#stop {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    /* transition: .5s; */
+}
+#stop:hover{
+    /* transition:.5s; */
+    cursor: pointer;
 }

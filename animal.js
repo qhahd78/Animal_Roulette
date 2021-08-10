@@ -61,6 +61,7 @@ const data = [
     },
 ]
 
+// 요소 가져오기 
 const btn = document.querySelector('#btn');
 const mainDiv=document.querySelector('#main-div');
 const image = document.createElement('img');
@@ -69,7 +70,7 @@ const info = document.createElement('p');
 var changePicId;
 const changePic = () => {
     let i = 0;
-    // 사진 돌아가게 
+    // 사진 돌아가하는 함수 setInterval 사용
     changePicId = setInterval(() => {
         image.src =`./img/${data[i].file}`;
         // 감자 예외처리
@@ -89,6 +90,7 @@ const changePic = () => {
 
 // 시작 이벤트
 const start = () => {
+    mainDiv.style.backgroundColor = 'white';
     image.setAttribute('height','400px');
     image.setAttribute('width','400px');
     mainDiv.appendChild(image);
@@ -100,5 +102,6 @@ const start = () => {
 
 // 멈추기 이벤트
 const stop = () => {
+    mainDiv.style.backgroundColor = 'yellow';
     clearInterval(changePicId);
 };

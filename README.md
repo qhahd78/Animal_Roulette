@@ -1,4 +1,4 @@
-### 반려동물 룰렛 미니게임 [Vanilla Javascript]
+# 반려동물 룰렛 미니게임 [Vanilla Javascript]
 
 - 2021-08-10
 
